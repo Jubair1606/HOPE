@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title("📋 Applications Ready for Review")
 
-df = pd.read_excel("dashboardd1/data/cleaning_data.xlsx")
+df = pd.read_excel("cleaning_data.xlsx")
 
 # Filter where request is approved
 ready_df = df[df['request_status'].str.lower() == 'approved']

@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.title("📊 Support by Demographics")
 
-df = pd.read_excel("dashboardd1/data/cleaning_data.xlsx")
+df = pd.read_excel("cleaning_data.xlsx")
 
 group_field = st.selectbox("Group by demographic:", [
     "gender", "insurance_type", "assistance_type", "marital_status", "race"
