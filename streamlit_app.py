@@ -5,7 +5,7 @@ st.set_page_config(page_title="Hope Foundation Dashboard", layout="wide")
 st.title("🏥 Hope Foundation Dashboard")
 
 # Use cleaned data
-df = pd.read_excel("dashboardd1/data/cleaning_data.xlsx")
+df = pd.read_excel("cleaning_data.xlsx")
 
 st.subheader("Cleaned Data Preview")
 st.dataframe(df.head())
