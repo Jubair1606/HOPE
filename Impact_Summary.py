@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.title("📈 Yearly Impact Summary")
 
-df = pd.read_excel("cleaning_data.xlsx")
+df = pd.read_excel("dashboardd1/data/cleaning_data.xlsx")
 df['year'] = pd.to_datetime(df['grant_req_date']).dt.year
 
 summary = df.groupby('year').agg(
